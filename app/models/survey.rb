@@ -1,5 +1,5 @@
 class Survey < ActiveRecord::Base
-	has_many :sub_components
-	has_and_belongs_to_many :user
+	has_many :components
+	has_many :users
 	
 end
