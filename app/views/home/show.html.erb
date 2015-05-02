@@ -1,0 +1,15 @@
+
+
+<% if !@rows.nil? && !@rows.empty? %>
+	<% @rows.each do |single| %>
+		
+	<% end %>
+<% end %>
+
+<h2>Import Excel</h2>
+<%= form_tag "import", multipart: true,:class => "navbar-form navbar-left" do %>
+  <div class="form-group">
+    <input type="file" name="file" class="form-control" placeholder="Select file">
+  </div>
+  <button type="submit" class="btn btn-success">Import</button>
+<% end %>
